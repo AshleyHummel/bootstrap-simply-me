@@ -46,35 +46,47 @@
       font-size: 30px;
     }
     .bg-1 {
-      background-color: #563f46; /* COLOR */
-      color: #ffffff; /* text color */
+      background-color: #563f46;
+      color: #ffffff;
     }
     .bg-2 {
-    background-color: #c8c3cc; /* COLOR */
+    background-color: #c8c3cc;
     color: #563f46;
     }
     .bg-3 {
-    background-color: #8ca3a3; /* COLOR */
+    background-color: #8ca3a3;
     color: #ffffff;
     }
     .bg-4 {
-    background-color: #563f46; /* COLOR */
+    background-color: #563f46;
     color: #ffffff;
     }
+
     .container-fluid {
-    padding-top: 70px;
-    padding-bottom: 70px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     }
     .p-fluid {
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-left: 200px;
-    padding-right: 200px;
+    padding-left: 225px;
+    padding-right: 225px;
     }
     .footer-fluid {
     padding-top: 10px;
     padding-bottom: 10px;
     }
+    .img-fluid {
+      border: 5px solid #563f46;
+      border-radius: 5%;
+      margin: 10px;
+    }
+    .contact-fluid {
+      width: 30px;
+      filter: invert(100%); /* makes black icons white */
+      margin: 10px;
+    }
+
     .navbar {
       font-family: 'Roboto', sans-serif;
       font-weight: bolder;
@@ -106,7 +118,7 @@
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav navbar-right">
           <li><a style="color: #ffffff" href="#About">About</a></li>
-          <li><a style="color: #ffffff" href="#Projects">Projects</a></li>
+          <li><a style="color: #ffffff" href="#Projects">Projects/Skills</a></li>
           <li><a style="color: #ffffff" href="#Contact">Contact</a></li>
         </ul>
       </div>
@@ -122,21 +134,45 @@
   <!-- Second Container -->
   <div class="container-fluid bg-2 text-center" id="About">
     <h3 class="title">About Me</h3>
-    <img class="footer-fluid" src="images/main.JPG" alt="Ashley in front of landscape" width="800">
-    <p class="p-fluid">Hi, I'm Ashley Hummel! I recently graduated from Desert Vista High School in 2021 and am looking forward to attending Barrett, the Honors College at Arizona State University, in the fall. I will be pursuing a Bachelor of Science in Computer Science and expect to graduate in 2025. I love to travel and hang out with my family, relax, and learn new things.</p>
+    <img class="img-fluid img-responsive" style="display:inline" src="images/main.JPG" alt="Ashley in front of landscape" width="800">
+    <p class="p-fluid">Hi, I'm Ashley Hummel! I recently graduated from Desert Vista High School in 2021 and am looking forward to attending Barrett, the Honors College at Arizona State University, in the fall. I will be pursuing a Bachelor of Science in Computer Science and expect to graduate in 2025. I love to travel and hang out with my family, relax, and learn new things.
+    </p>
+    <p class="p-fluid">I am currently exploring my interests in different aspects of computer science, but am most interested in a software engineering career at the moment. I'm looking into my passion for front end vs. back end development, as well as learning Java, Python, and web development (HTML/CSS/JavaScript). In my free time, I enjoy exploring these languages and building projects to expand my skillset.
+    </p>
   </div>
 
   <!-- Third Container -->
   <div class="container-fluid bg-3 text-center" id="Projects">
-    <h3 class="title">Latest Projects</h3>
-  
+    <div class="row">
+      <div class="col-md-6">
+        <h3 class="title">Latest Projects</h3>
+        <a href="https://github.com/AshleyHummel/simple-calculator-GUI">
+          <img class="img-fluid img-responsive" style="display:inline" src="images/calculator_thumbnail.png" alt="Calculator GUI project thumbnail" width="300"> 
+        </a> 
+        <a href="https://github.com/AshleyHummel/daily-reddit-images">
+          <img class="img-fluid img-responsive" style="display:inline" src="images/reddit_thumbnail.png" alt="Daily Reddit Images project thumbnail" width="300">
+        </a>
+      </div>
+      <div class="col-md-6">
+        <h3 class="title">Technical Skills</h3>
+        <p>Lorem ipsum...</p>
+      </div>
+    </div>
   </div>
 
   <!-- Footer -->
   <footer class="footer-fluid bg-4 text-center" id="Contact">
     <h3 class="title">Contact Me</h3>
     <!-- "&emsp;" adds space between elements -->
-    <img src="images/icons/linkedin.png" alt="LinkedIn icon" width="20"> LinkedIn &emsp;<img src="images/icons/github.png" alt="GitHub icon" width="20"> GitHub &emsp;<img src="images/icons/email.jpg" alt="email icon" width="20"> example@example.com &emsp; 
+    <a href="https://www.linkedin.com/in/ashleyhummel/">
+      <img class="contact-fluid" src="images/icons/linkedin.png" alt="LinkedIn icon">
+    </a>
+    <a href="https://github.com/AshleyHummel">
+      <img class="contact-fluid" src="images/icons/github.png" alt="GitHub icon">
+    </a>
+    <a href="mailto: ashley.l.hummel@gmail.com">
+      <img class="contact-fluid" src="images/icons/email.jpg" alt="email icon">
+    </a>
 
     <p><br>Theme Made By <a href="https://www.w3schools.com">www.w3schools.com</a></p>
   </footer>
