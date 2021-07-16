@@ -17,7 +17,8 @@ Visit it here &#8594; https://ashleyhummel.github.io/bootstrap-simply-me/
 
 
 ## Screenshots
-<img src="" width="">
+<img src="site_screenshot_1.png" width="800"> 
+<img src="site_screenshot_2.png" width="800">
 
 ## License
 This project is open source and available under the MIT License.
