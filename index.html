@@ -33,7 +33,7 @@
       line-height: 1.8;
       color: #f5f6f7;
     }
-    p {font-size: 16px;}
+    p {font-size: 18px;}
     .margin {margin-bottom: 45px;}
     .main-title {
       font-family: 'Encode Sans SC', sans-serif !important; 
@@ -43,7 +43,7 @@
     .title {
       font-family: 'Encode Sans SC', sans-serif !important; 
       font-weight: bolder;
-      font-size: 30px;
+      font-size: 35px;
     }
     .bg-1 {
       background-color: #563f46;
@@ -101,6 +101,32 @@
     .navbar-nav  li a:hover {
       color: #563f46 !important;
     }
+
+    /* CSS Skill Bar outline from https://www.w3schools.com/howto/howto_css_skill_bar.asp */
+    /* skill bars container */
+    .skill-container {
+      margin-left: 10%; /* center skill bars */
+      width: 80%;
+      background-color: #c8c3cc;
+    }
+    .skills {
+      text-align: right;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-right: 10px;
+      background-color: #563f46;
+      color: #ffffff;
+    }
+
+    .java {width: 50%;}
+    .python {width: 20%;}
+    .html-css-js {width: 20%;}
+
+    .skill-titles {
+      padding-top: 5px;
+      margin-left: 10%; /* center skill bars */
+      text-align: left;
+    }
   </style>
 </head>
 <body>
@@ -115,7 +141,7 @@
         </button>
         <a class="navbar navbar-brand" href="#">Ashley</a>
       </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
+      <div class="collapse navbar-collapse">
         <ul class="nav navbar-nav navbar-right">
           <li><a style="color: #ffffff" href="#About">About</a></li>
           <li><a style="color: #ffffff" href="#Projects">Projects/Skills</a></li>
@@ -137,7 +163,7 @@
     <img class="img-fluid img-responsive" style="display:inline" src="images/main.JPG" alt="Ashley in front of landscape" width="800">
     <p class="p-fluid">Hi, I'm Ashley Hummel! I recently graduated from Desert Vista High School in 2021 and am looking forward to attending Barrett, the Honors College at Arizona State University, in the fall. I will be pursuing a Bachelor of Science in Computer Science and expect to graduate in 2025. I love to travel and hang out with my family, relax, and learn new things.
     </p>
-    <p class="p-fluid">I am currently exploring my interests in different aspects of computer science, but am most interested in a software engineering career at the moment. I'm looking into my passion for front end vs. back end development, as well as learning Java, Python, and web development (HTML/CSS/JavaScript). In my free time, I enjoy exploring these languages and building projects to expand my skillset.
+    <p class="p-fluid">I am currently exploring my interests in different aspects of computer science, but am most interested in a software engineering career at the moment. I'm also looking into my passion for front end vs. back end development, as well as learning Java, Python, and web development (HTML/CSS/JavaScript). In my free time, I enjoy exploring these languages and building projects to expand my skillset.
     </p>
   </div>
 
@@ -155,10 +181,27 @@
       </div>
       <div class="col-md-6">
         <h3 class="title">Technical Skills</h3>
-        <p>Lorem ipsum...</p>
+        <!-- CSS Skill Bar outline from https://www.w3schools.com/howto/howto_css_skill_bar.asp -->
+        <p class="skill-titles"> Java</p>
+        <div class="skill-container">
+          <div class="skills java">Intermediate</div>
+        </div>
+        
+        <p class="skill-titles">Python</p>
+        <div class="skill-container">
+          <div class="skills python">Beginner</div>
+        </div>
+        
+        <p class="skill-titles"> HTML, CSS, JavaScript</p>
+        <div class="skill-container">
+          <div class="skills html-css-js">Beginner</div>
+        </div>
+        </div>
       </div>
     </div>
   </div>
+
+  <!-- TODO: Want to see more? \n Check out my resume > (last phrase is a link) -->
 
   <!-- Footer -->
   <footer class="footer-fluid bg-4 text-center" id="Contact">
